@@ -10,8 +10,12 @@ export default function Hero() {
 
   return (
     <section
-      className="relative flex flex-col items-center justify-center min-h-screen bg-linear-to-br from-gray-50 to-gray-100 m-0 text-center p-4 gap-10 overflow-hidden animate-[bgPan_20s_ease-in-out_infinite]"
-      style={{ backgroundImage: `url(${heroBackground})`, backgroundSize: '120%', backgroundPosition: 'center' }}
+      className="relative flex flex-col items-center justify-center min-h-screen bg-linear-to-br from-gray-50 to-gray-100 m-0 text-center p-4 gap-10 overflow-hidden animate-[bgPan_15s_ease-in-out_infinite]"
+      style={{
+        backgroundImage: `url(${heroBackground})`,
+        backgroundSize: "150% auto",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <h1 className="relative z-10 text-7xl text-white font-bold mb-4 animate-[appearFromLeft_1.5s_ease-out_forwards]">
         Welcome to My Portfolio
