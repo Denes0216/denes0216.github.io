@@ -2,6 +2,12 @@ import { useState } from "react";
 
 export default function AboutTabs() {
   const [activeTab, setActiveTab] = useState<string>("Skills");
+  const [animationKey, setAnimationKey] = useState<number>(0);
+
+  const handleTabClick = (tab: string) => {
+    setActiveTab(tab);
+    setAnimationKey((prev) => prev + 1); // Increment to trigger re-render and restart animation
+  };
 
   const tabs = {
     Skills: (
@@ -38,12 +44,17 @@ export default function AboutTabs() {
               ? "bg-gray-500 border-gray-700 text-white"
               : "bg-gray-50 border-gray-300 text-gray-700 hover:bg-gray-200"
           }`}
-          onClick={() => setActiveTab(tab)}
+          onClick={() => handleTabClick(tab)}
         >
           {tab}
         </button>
       ))}
-      <div className="mt-6 min-h-32">{tabs[activeTab as keyof typeof tabs]}</div>
+      <div
+        key={animationKey}
+        className="mt-6 min-h-32 animate-[fadeIn_1s_ease-out_forwards]"
+      >
+        {tabs[activeTab as keyof typeof tabs]}
+      </div>
     </div>
   );
 }

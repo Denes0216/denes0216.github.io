@@ -30,18 +30,18 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="flex items-center justify-center min-h-screen bg-white m-0 text-center p-4 pt-20 gap-10"
+      className="flex items-center justify-center min-h-screen bg-white m-0 text-center gap-10"
     >
       <div>
         <div
-          className={`w-40 h-40 bg-gray-300 rounded-full mb-6 mx-auto ${
+          className={`relative h-screen w-96 flex-1 bg-gray-300 m-0 ${
             isVisible
               ? "animate-[floatFromLeft_1.5s_ease-out_forwards]"
               : "opacity-0"
           }`}
         ></div>
       </div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-2 flex-col items-center">
         <h2
           className={`text-3xl font-bold mb-4 ${
             isVisible
