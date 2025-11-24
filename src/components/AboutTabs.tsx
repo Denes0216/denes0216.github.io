@@ -35,12 +35,12 @@ export default function AboutTabs() {
   };
 
   return (
-    <div className="mx-auto flex max-w-xl flex-col items-center">
-      <div className="p-6">
+    <div className="mx-auto flex max-w-xl flex-col items-center px-4 sm:px-6">
+      <div className="flex justify-center gap-2 p-4 sm:p-6 sm:flex-nowrap">
         {Object.keys(tabs).map((tab) => (
           <button
             key={tab}
-            className={`mx-2 rounded-3xl border px-4 py-2 ${
+            className={`rounded-3xl border px-4 py-2 text-sm transition-colors sm:text-base sm:w-auto ${
               tab === activeTab
                 ? "border-gray-700 bg-gray-500 text-white"
                 : "border-gray-300 bg-gray-50 text-gray-700 hover:bg-gray-200"
@@ -53,7 +53,7 @@ export default function AboutTabs() {
       </div>
       <div
         key={animationKey}
-        className="mt-6 min-h-32 animate-[fadeIn_1s_ease-out_forwards] pl-5 text-left"
+        className="mt-4 min-h-32 animate-[fadeIn_1s_ease-out_forwards] px-4 text-left text-sm sm:mt-6 sm:pl-5 sm:text-base"
       >
         {tabs[activeTab as keyof typeof tabs]}
       </div>

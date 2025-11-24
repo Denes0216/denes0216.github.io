@@ -30,9 +30,9 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="m-0 flex min-h-screen snap-start items-center justify-center gap-10 bg-white text-center"
+      className="m-0 flex min-h-screen snap-start flex-col items-center justify-center gap-6 bg-white text-center lg:flex-row lg:gap-10"
     >
-      <div>
+      <div className="hidden lg:block">
         <div
           className={`relative m-0 h-screen w-96 flex-1 bg-gray-300 ${
             isVisible
@@ -41,9 +41,9 @@ export default function About() {
           }`}
         ></div>
       </div>
-      <div className="flex flex-2 flex-col items-center">
+      <div className="flex w-full flex-2 flex-col items-center justify-center lg:w-auto">
         <h2
-          className={`mb-4 p-6 text-3xl font-bold ${
+          className={`mb-4 p-4 text-2xl font-bold sm:p-6 sm:text-3xl ${
             isVisible
               ? "animate-[appearFromLeft_1.5s_ease-out_forwards]"
               : "opacity-0"
@@ -52,7 +52,7 @@ export default function About() {
           About Me
         </h2>
         <div
-          className={`text-lg ${
+          className={`w-full text-base sm:text-lg flex${
             isVisible
               ? "animate-[appearFromBottom_1.5s_ease-out_forwards]"
               : "opacity-0"

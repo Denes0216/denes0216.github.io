@@ -29,7 +29,7 @@ export default function BackToTop() {
   return (
     <button
       onClick={goToTop}
-      className="fixed right-4 bottom-4 z-50 animate-[appearFromBottom_0.5s_ease-out_forwards] rounded-full bg-gray-500 px-4 py-2 text-white hover:cursor-pointer hover:bg-gray-700"
+      className="fixed right-3 bottom-3 z-50 animate-[appearFromBottom_0.5s_ease-out_forwards] rounded-full bg-gray-500 px-3 py-2 text-sm text-white shadow-lg transition-colors hover:cursor-pointer hover:bg-gray-700 sm:right-4 sm:bottom-4 sm:px-4 sm:text-base"
     >
       ↑
     </button>

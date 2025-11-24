@@ -61,21 +61,16 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="m-0 flex min-h-screen snap-start flex-col items-center justify-center gap-10 bg-gray-100 p-4 text-center"
+      className="m-0 flex min-h-screen snap-start flex-col items-center justify-center gap-6 bg-gray-100 p-4 text-center sm:gap-10 sm:p-6"
     >
-      <h2 className="mb-4 text-3xl font-bold">My Projects</h2>
-      <div className="relative flex w-full max-w-4xl items-center gap-4">
-        <button
-          onClick={goToPrevious}
-          className="z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-gray-700 bg-transparent text-2xl text-black transition-all hover:bg-gray-800 hover:text-white"
-          aria-label="Previous project"
-        >
-          ←
-        </button>
+      <h2 className="mb-2 text-2xl font-bold sm:mb-4 sm:text-3xl">
+        My Projects
+      </h2>
+      <div className="relative flex w-full max-w-4xl items-center gap-2 sm:gap-4">
         <div
           ref={scrollRef}
           onScroll={handleScroll}
-          className="scrollbar-hide flex w-full snap-x snap-mandatory gap-10 overflow-x-auto px-4"
+          className="scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-auto px-2 sm:gap-10 sm:px-4"
           style={{ scrollbarWidth: "none" }}
         >
           {projects.map((project, index) => (
@@ -84,27 +79,36 @@ export default function Projects() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-2 flex w-full items-center justify-around gap-2 sm:mt-4">
+        <button
+          onClick={goToPrevious}
+          className="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-gray-700 bg-transparent text-xl text-black transition-all hover:bg-gray-800 hover:text-white sm:h-12 sm:w-12 sm:text-2xl"
+          aria-label="Previous project"
+        >
+          ←
+        </button>
+        <div className="flex gap-5">
+          {projects.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => scrollToIndex(index)}
+              className={`h-2.5 w-2.5 rounded-full transition-all sm:h-3 sm:w-3 ${
+                index === activeIndex
+                  ? "w-6 bg-gray-700 sm:w-8"
+                  : "bg-gray-400 hover:bg-gray-500"
+              }`}
+              aria-label={`Go to project ${index + 1}`}
+            />
+          ))}
+        </div>
         <button
           onClick={goToNext}
-          className="z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-gray-700 bg-transparent text-2xl text-black transition-all hover:bg-gray-800 hover:text-white"
+          className="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-gray-700 bg-transparent text-xl text-black transition-all hover:bg-gray-800 hover:text-white sm:h-12 sm:w-12 sm:text-2xl"
           aria-label="Next project"
         >
           →
         </button>
-      </div>
-      <div className="mt-4 flex gap-2">
-        {projects.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => scrollToIndex(index)}
-            className={`h-3 w-3 rounded-full transition-all ${
-              index === activeIndex
-                ? "w-8 bg-gray-700"
-                : "bg-gray-400 hover:bg-gray-500"
-            }`}
-            aria-label={`Go to project ${index + 1}`}
-          />
-        ))}
       </div>
     </section>
   );
