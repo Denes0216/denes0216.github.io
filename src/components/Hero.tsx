@@ -16,7 +16,7 @@ export default function Hero() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <h1 className="relative z-10 mb-2 animate-[appearFromLeft_1.5s_ease-out_forwards] px-4 text-3xl font-bold text-white sm:mb-4 sm:text-5xl md:text-6xl lg:text-7xl">
+      <h1 className="relative z-10 mb-4 animate-[appearFromLeft_1.5s_ease-out_forwards] px-4 text-3xl font-bold text-white sm:mb-4 sm:text-5xl md:text-6xl lg:text-7xl">
         Welcome to My Portfolio
       </h1>
       <p className="relative z-10 max-w-xl animate-[appearFromBottom_1.5s_ease-out_forwards] px-6 text-base text-white sm:text-lg">

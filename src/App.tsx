@@ -9,7 +9,7 @@ function App() {
     <>
       <div
         id="scroll-container"
-        className="h-screen snap-y snap-mandatory overflow-y-scroll"
+        className="h-screen snap-y overflow-y-scroll"
       >
         <Hero />
         <About />

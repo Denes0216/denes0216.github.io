@@ -19,7 +19,7 @@ export default function ProjectCard({
         </div>
         {/* placeholder image */}
         <div className="mb-4 flex flex-col items-center justify-center gap-4 sm:gap-6 md:flex-row md:gap-10 lg:flex-row">
-          <div className="mb-2 h-48 w-full min-w-[250px] bg-gray-200 sm:mb-4 sm:h-64 sm:min-w-[300px] md:h-80 md:w-1/2"></div>
+          <div className="mb-2 h-48 w-full bg-gray-200 sm:mb-4 sm:h-64 md:h-80 md:w-1/2 md:min-w-[300px]"></div>
           <p className="px-2 text-sm text-gray-700 sm:px-0 sm:text-base">
             {description}
           </p>

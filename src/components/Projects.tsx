@@ -80,7 +80,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <div className="mt-2 flex w-full items-center justify-around gap-2 sm:mt-4">
+      <div className="mt-2 flex w-full items-center justify-around gap-2 sm:mt-4 max-w-[860px]">
         <button
           onClick={goToPrevious}
           className="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-gray-700 bg-transparent text-xl text-black transition-all hover:bg-gray-800 hover:text-white sm:h-12 sm:w-12 sm:text-2xl"

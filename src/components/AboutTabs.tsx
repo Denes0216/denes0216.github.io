@@ -36,11 +36,11 @@ export default function AboutTabs() {
 
   return (
     <div className="mx-auto flex max-w-xl flex-col items-center px-4 sm:px-6">
-      <div className="flex justify-center gap-2 p-4 sm:p-6 sm:flex-nowrap">
+      <div className="flex justify-between gap-2 p-4 sm:p-6 sm:flex-nowrap min-w-[530px]">
         {Object.keys(tabs).map((tab) => (
           <button
             key={tab}
-            className={`rounded-3xl border px-4 py-2 text-sm transition-colors sm:text-base sm:w-auto ${
+            className={`rounded-3xl border min-w-[110px] px-4 py-2 text-sm transition-colors sm:text-base sm:w-auto ${
               tab === activeTab
                 ? "border-gray-700 bg-gray-500 text-white"
                 : "border-gray-300 bg-gray-50 text-gray-700 hover:bg-gray-200"

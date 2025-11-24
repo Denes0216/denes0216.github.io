@@ -52,7 +52,7 @@ export default function About() {
           About Me
         </h2>
         <div
-          className={`w-full text-base sm:text-lg flex${
+          className={`w-full text-base sm:text-lg ${
             isVisible
               ? "animate-[appearFromBottom_1.5s_ease-out_forwards]"
               : "opacity-0"
