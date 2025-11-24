@@ -36,7 +36,7 @@ export default function AboutTabs() {
 
   return (
     <div className="mx-auto flex max-w-xl flex-col items-center">
-      <div>
+      <div className="p-6">
         {Object.keys(tabs).map((tab) => (
           <button
             key={tab}
@@ -53,7 +53,7 @@ export default function AboutTabs() {
       </div>
       <div
         key={animationKey}
-        className="mt-6 min-h-32 animate-[fadeIn_1s_ease-out_forwards] pl-5"
+        className="mt-6 min-h-32 animate-[fadeIn_1s_ease-out_forwards] pl-5 text-left"
       >
         {tabs[activeTab as keyof typeof tabs]}
       </div>

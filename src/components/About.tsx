@@ -43,7 +43,7 @@ export default function About() {
       </div>
       <div className="flex flex-2 flex-col items-center">
         <h2
-          className={`mb-4 text-3xl font-bold ${
+          className={`mb-4 p-6 text-3xl font-bold ${
             isVisible
               ? "animate-[appearFromLeft_1.5s_ease-out_forwards]"
               : "opacity-0"
