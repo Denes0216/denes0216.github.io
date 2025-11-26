@@ -85,7 +85,7 @@ export default function Projects() {
     <section
       id="projects"
       ref={sectionRef}
-      className="m-0 flex min-h-screen snap-start flex-col items-center justify-center gap-6 bg-gray-100 p-4 text-center sm:gap-10 sm:p-6"
+      className="m-0 flex min-h-screen flex-col items-center justify-center gap-6 bg-gray-100 p-4 text-center sm:gap-10 sm:p-6"
     >
       <h2
         className={`mb-2 text-2xl font-bold sm:mb-4 sm:text-3xl ${

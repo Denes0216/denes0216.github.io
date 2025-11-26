@@ -30,7 +30,7 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="m-0 flex min-h-screen snap-start flex-col items-center justify-center gap-6 bg-white text-center lg:flex-row lg:gap-10"
+      className="m-0 flex min-h-screen flex-col items-center justify-center gap-6 bg-white text-center lg:flex-row lg:gap-10"
     >
       <div className="hidden lg:block">
         <div

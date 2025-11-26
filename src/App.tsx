@@ -7,10 +7,7 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <div
-        id="scroll-container"
-        className="h-screen snap-y overflow-y-scroll"
-      >
+      <div id="scroll-container" className="h-screen overflow-y-scroll">
         <Hero />
         <About />
         <Projects />
