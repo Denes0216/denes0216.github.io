@@ -30,13 +30,13 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className={`relative z-10 m-0 flex min-h-screen flex-col items-center justify-center gap-8 bg-linear-to-br from-gray-50 to-white p-6 text-center lg:flex-row lg:gap-16 lg:p-12 ${
+      className={`relative z-10 m-0 flex min-h-screen flex-col items-center justify-center gap-8 bg-linear-to-br from-gray-50 to-white p-6 text-center transition-colors duration-300 lg:flex-row lg:gap-16 lg:p-12 dark:from-gray-800 dark:to-gray-900 ${
         isVisible ? "animate-[slideUpFromBottom_0.8s_ease-out_forwards]" : ""
       }`}
     >
       <div className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center">
         <div
-          className={`relative h-80 w-80 overflow-hidden rounded-xl bg-linear-to-br from-gray-300 to-gray-400 shadow-2xl transition-all duration-500 ${
+          className={`relative h-80 w-80 overflow-hidden rounded-xl bg-linear-to-br from-gray-300 to-gray-400 shadow-2xl transition-all duration-500 dark:from-gray-700 dark:to-gray-600 ${
             isVisible
               ? "animate-[floatFromLeft_1.5s_ease-out_forwards] hover:scale-105 hover:rotate-2"
               : "opacity-0"
@@ -53,9 +53,9 @@ export default function About() {
       <div className="flex w-full max-w-3xl flex-col items-center justify-center">
         <div className="mb-6">
           <h2
-            className={`mb-2 bg-linear-to-r from-gray-800 to-gray-600 bg-clip-text text-3xl font-bold text-transparent sm:text-4xl lg:text-5xl ${
+            className={`mb-2 bg-linear-to-r from-gray-800 to-gray-600 bg-clip-text text-3xl font-bold text-transparent sm:mb-4 sm:text-4xl lg:text-5xl dark:from-gray-200 dark:to-gray-400 ${
               isVisible
-                ? "animate-[appearFromLeft_1.5s_ease-out_forwards]"
+                ? "animate-[appearFromBottom_1.5s_ease-out_forwards]"
                 : "opacity-0"
             }`}
           >

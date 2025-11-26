@@ -99,13 +99,13 @@ export default function Projects() {
     <section
       id="projects"
       ref={sectionRef}
-      className={`relative z-20 m-0 flex min-h-screen flex-col items-center justify-center gap-8 bg-linear-to-br from-gray-100 to-gray-50 p-4 text-center sm:gap-10 sm:p-6 ${
+      className={`relative z-20 m-0 flex min-h-screen flex-col items-center justify-center gap-8 bg-linear-to-br from-gray-100 to-gray-50 p-4 text-center transition-colors duration-300 sm:gap-10 sm:p-6 dark:from-gray-900 dark:to-gray-800 ${
         isVisible ? "animate-[slideUpFromBottom_0.8s_ease-out_forwards]" : ""
       }`}
     >
       <div className="mb-4">
         <h2
-          className={`mb-2 bg-linear-to-r from-gray-800 to-gray-600 bg-clip-text text-3xl font-bold text-transparent sm:mb-4 sm:text-4xl lg:text-5xl ${
+          className={`mb-2 bg-linear-to-r from-gray-800 to-gray-600 bg-clip-text text-3xl font-bold text-transparent sm:mb-4 sm:text-4xl lg:text-5xl dark:from-gray-200 dark:to-gray-400 ${
             isVisible
               ? "animate-[appearFromBottom_1.5s_ease-out_forwards]"
               : "opacity-0"
@@ -146,7 +146,7 @@ export default function Projects() {
       >
         <button
           onClick={goToPrevious}
-          className="z-10 hidden h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-gray-700 bg-transparent text-2xl leading-none text-black transition-all hover:bg-gray-800 hover:text-white md:flex"
+          className="z-10 hidden h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-gray-700 bg-transparent text-2xl leading-none text-black transition-all hover:bg-gray-800 hover:text-white md:flex dark:border-gray-400 dark:text-white dark:hover:bg-gray-600"
           aria-label="Previous project"
         >
           <span className="inline-block -translate-y-px">←</span>
@@ -158,8 +158,8 @@ export default function Projects() {
               onClick={() => scrollToIndex(index)}
               className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-semibold transition-all sm:h-9 sm:w-9 ${
                 index === activeIndex
-                  ? "scale-110 bg-gray-700 text-white"
-                  : "bg-gray-300 text-gray-700 hover:bg-gray-400"
+                  ? "scale-110 bg-gray-700 text-white dark:bg-gray-300 dark:text-gray-900"
+                  : "bg-gray-300 text-gray-700 hover:bg-gray-400 dark:bg-gray-600 dark:text-gray-200 dark:hover:bg-gray-500"
               }`}
               aria-label={`Go to project ${index + 1}`}
             >
@@ -169,7 +169,7 @@ export default function Projects() {
         </div>
         <button
           onClick={goToNext}
-          className="z-10 hidden h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-gray-700 bg-transparent text-2xl leading-none text-black transition-all hover:bg-gray-800 hover:text-white md:flex"
+          className="z-10 hidden h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-gray-700 bg-transparent text-2xl leading-none text-black transition-all hover:bg-gray-800 hover:text-white md:flex dark:border-gray-400 dark:text-white dark:hover:bg-gray-600"
           aria-label="Next project"
         >
           <span className="inline-block -translate-y-px">→</span>

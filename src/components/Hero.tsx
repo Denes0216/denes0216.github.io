@@ -1,7 +1,11 @@
 import heroBackground from "../assets/hero_background.png";
+import heroBackgroundDark from "../assets/hero_background_dark.png";
 import { FaEnvelope, FaArrowRight } from "react-icons/fa";
+import { useTheme } from "../contexts/ThemeContext";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Hero() {
+  const { theme } = useTheme();
   const goToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -11,12 +15,13 @@ export default function Hero() {
 
   return (
     <section
-      className="hero-background relative m-0 flex min-h-screen animate-[bgPan_15s_ease-in-out_infinite] flex-col items-center justify-center gap-6 overflow-hidden bg-linear-to-br from-gray-50 to-gray-100 p-4 text-center sm:gap-10 sm:p-6"
+      className="hero-background relative m-0 flex min-h-screen animate-[bgPan_15s_ease-in-out_infinite] flex-col items-center justify-center gap-6 overflow-hidden bg-linear-to-br from-gray-50 to-gray-100 p-4 text-center transition-colors duration-300 sm:gap-10 sm:p-6 dark:from-gray-900 dark:to-gray-800"
       style={{
-        backgroundImage: `url(${heroBackground})`,
+        backgroundImage: `url(${theme === "dark" ? heroBackgroundDark : heroBackground})`,
         backgroundRepeat: "no-repeat",
       }}
     >
+      <ThemeToggle />
       <h1 className="relative z-10 mb-4 animate-[appearFromLeft_1.5s_ease-out_forwards] px-4 text-3xl font-bold text-white sm:mb-4 sm:text-5xl md:text-6xl lg:text-7xl">
         Welcome to My Portfolio
       </h1>

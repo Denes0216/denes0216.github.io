@@ -72,18 +72,26 @@ export default function AboutTabs() {
     ),
     Experience: (
       <div className="space-y-4">
-        <div className="rounded-xl border-l-4 border-gray-600 bg-gray-50 p-4 text-left transition-all hover:shadow-lg">
-          <h3 className="font-bold text-gray-800">Senior Developer</h3>
-          <p className="text-sm text-gray-600">Tech Company • 2021 - Present</p>
-          <p className="mt-2 text-sm text-gray-700">
+        <div className="rounded-xl border-l-4 border-gray-600 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-400 dark:bg-gray-700">
+          <h3 className="font-bold text-gray-800 dark:text-gray-200">
+            Senior Developer
+          </h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            Tech Company • 2021 - Present
+          </p>
+          <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
             Leading development of scalable web applications, mentoring junior
             developers, and implementing best practices.
           </p>
         </div>
-        <div className="rounded-xl border-l-4 border-gray-500 bg-gray-50 p-4 text-left transition-all hover:shadow-lg">
-          <h3 className="font-bold text-gray-800">Full Stack Developer</h3>
-          <p className="text-sm text-gray-600">Startup Inc • 2019 - 2021</p>
-          <p className="mt-2 text-sm text-gray-700">
+        <div className="rounded-xl border-l-4 border-gray-500 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-500 dark:bg-gray-700">
+          <h3 className="font-bold text-gray-800 dark:text-gray-200">
+            Full Stack Developer
+          </h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            Startup Inc • 2019 - 2021
+          </p>
+          <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
             Developed and maintained multiple client projects using modern
             JavaScript frameworks and cloud technologies.
           </p>
@@ -92,17 +100,21 @@ export default function AboutTabs() {
     ),
     Education: (
       <div className="space-y-4">
-        <div className="rounded-xl border-l-4 border-gray-600 bg-gray-50 p-4 text-left transition-all hover:shadow-lg">
-          <h3 className="font-bold text-gray-800">Computer Science Degree</h3>
+        <div className="rounded-xl border-l-4 border-gray-600 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-400 dark:bg-gray-700">
+          <h3 className="font-bold text-gray-800 dark:text-gray-200">
+            Computer Science Degree
+          </h3>
           <p className="text-sm text-gray-600">University Name • 2015 - 2019</p>
           <p className="mt-2 text-sm text-gray-700">
             Graduated with honors, specializing in software engineering and web
             technologies.
           </p>
         </div>
-        <div className="rounded-xl border-l-4 border-gray-500 bg-gray-50 p-4 text-left transition-all hover:shadow-lg">
-          <h3 className="font-bold text-gray-800">Online Certifications</h3>
-          <p className="mt-2 text-sm text-gray-700">
+        <div className="rounded-xl border-l-4 border-gray-500 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-500 dark:bg-gray-700">
+          <h3 className="font-bold text-gray-800 dark:text-gray-200">
+            Online Certifications
+          </h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
             AWS Certified Developer • Advanced React Patterns • Full Stack Web
             Development
           </p>
@@ -125,21 +137,21 @@ export default function AboutTabs() {
             <button
               className={`relative flex items-center gap-1.5 px-4 py-2 text-sm transition-colors ${
                 tab === activeTab
-                  ? "font-semibold text-gray-700"
-                  : "text-gray-500 hover:text-gray-700"
+                  ? "font-semibold text-gray-700 dark:text-gray-200"
+                  : "text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
               }`}
               onClick={() => handleTabClick(tab)}
             >
               <span className="text-base">{tabIcons[tab]}</span>
               {tab}
               <span
-                className={`absolute bottom-0 left-0 h-0.5 bg-gray-700 transition-all duration-300 ${
+                className={`absolute bottom-0 left-0 h-0.5 bg-gray-700 transition-all duration-300 dark:bg-gray-300 ${
                   tab === activeTab ? "w-full" : "w-0"
                 }`}
               ></span>
             </button>
             {index < Object.keys(tabs).length - 1 && (
-              <div className="h-6 w-px bg-gray-300"></div>
+              <div className="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
             )}
           </div>
         ))}
@@ -151,8 +163,8 @@ export default function AboutTabs() {
             key={tab}
             className={`flex min-w-[110px] items-center gap-2 rounded-xl border px-4 py-2 text-sm transition-colors sm:w-auto sm:text-base ${
               tab === activeTab
-                ? "border-gray-700 bg-gray-500 text-white"
-                : "border-gray-300 bg-gray-50 text-gray-700 hover:bg-gray-200"
+                ? "border-gray-700 bg-gray-500 text-white dark:border-gray-400 dark:bg-gray-600"
+                : "border-gray-300 bg-gray-50 text-gray-700 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
             }`}
             onClick={() => handleTabClick(tab)}
           >

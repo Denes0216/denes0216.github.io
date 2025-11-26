@@ -17,11 +17,11 @@ export default function ProjectCard({
   project: { title, description, tags, demoLink, githubLink },
 }: ProjectCardProps) {
   return (
-    <div className="group relative max-w-full animate-[appearFromBottom_1.5s_ease-out_forwards] overflow-hidden rounded-xl bg-white shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+    <div className="group relative max-w-full animate-[appearFromBottom_1.5s_ease-out_forwards] overflow-hidden rounded-xl bg-white shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:bg-gray-800">
       <div className="absolute inset-0 bg-linear-to-br from-gray-900/0 to-gray-900/0 transition-all duration-300 group-hover:from-gray-900/5 group-hover:to-gray-900/10"></div>
 
       <div className="relative px-6 py-6 sm:px-8 sm:py-8">
-        <h3 className="mb-4 bg-linear-to-r from-gray-800 to-gray-600 bg-clip-text text-xl font-bold text-transparent sm:mb-6 sm:text-2xl">
+        <h3 className="mb-4 bg-linear-to-r from-gray-800 to-gray-600 bg-clip-text text-xl font-bold text-transparent sm:mb-6 sm:text-2xl dark:from-gray-200 dark:to-gray-400">
           {title}
         </h3>
 
@@ -36,7 +36,7 @@ export default function ProjectCard({
           </div>
 
           <div className="flex-1">
-            <p className="px-2 text-left text-sm leading-relaxed text-gray-700 sm:px-0 sm:text-base">
+            <p className="px-2 text-left text-sm leading-relaxed text-gray-700 sm:px-0 sm:text-base dark:text-gray-300">
               {description}
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function ProjectCard({
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="inline-block rounded-xl bg-linear-to-r from-gray-100 to-gray-200 px-3 py-1.5 text-xs font-semibold text-gray-700 transition-all hover:from-gray-700 hover:to-gray-600 hover:text-white sm:text-sm"
+              className="inline-block rounded-xl bg-linear-to-r from-gray-100 to-gray-200 px-3 py-1.5 text-xs font-semibold text-gray-700 transition-all hover:from-gray-700 hover:to-gray-600 hover:text-white sm:text-sm dark:from-gray-700 dark:to-gray-600 dark:text-gray-200 dark:hover:from-gray-600 dark:hover:to-gray-500"
             >
               {tag}
             </span>
@@ -68,7 +68,7 @@ export default function ProjectCard({
           {githubLink && (
             <a
               href={githubLink}
-              className="flex flex-1 items-center justify-center gap-2 rounded-full border-2 border-gray-300 bg-white px-6 py-2.5 text-sm font-semibold text-gray-700 transition-all duration-300 hover:scale-105 hover:border-gray-700 hover:bg-gray-50"
+              className="flex flex-1 items-center justify-center gap-2 rounded-full border-2 border-gray-300 bg-white px-6 py-2.5 text-sm font-semibold text-gray-700 transition-all duration-300 hover:scale-105 hover:border-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:hover:border-gray-400 dark:hover:bg-gray-600"
               target="_blank"
               rel="noopener noreferrer"
             >
