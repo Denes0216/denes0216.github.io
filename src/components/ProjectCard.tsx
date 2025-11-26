@@ -12,7 +12,7 @@ export default function ProjectCard({
   project: { title, description, tags },
 }: ProjectCardProps) {
   return (
-    <div className="max-w-full overflow-hidden rounded bg-white shadow-lg">
+    <div className="max-w-full animate-[appearFromBottom_1.5s_ease-out_forwards] delay-150 overflow-hidden rounded bg-white shadow-lg">
       <div className="px-4 py-4 sm:px-6">
         <div className="mb-6 text-lg font-bold sm:mb-10 sm:text-xl">
           {title}
