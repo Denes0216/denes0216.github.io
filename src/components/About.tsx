@@ -30,7 +30,7 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className={`relative z-10 m-0 flex min-h-screen flex-col items-center justify-center gap-8 bg-linear-to-br from-gray-50 to-white p-6 text-center transition-colors duration-300 lg:flex-row lg:gap-16 lg:p-12 dark:from-gray-800 dark:to-gray-900 ${""}`}
+      className={`relative z-10 m-0 flex min-h-screen flex-col items-center justify-center gap-8 bg-gray-100 p-6 text-center transition-colors duration-300 lg:flex-row lg:gap-16 lg:p-12 dark:bg-gray-800 ${""}`}
     >
       <div className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center">
         <div

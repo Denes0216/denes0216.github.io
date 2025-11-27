@@ -51,7 +51,7 @@ export default function Contact() {
     <section
       id="contact"
       ref={sectionRef}
-      className={`relative z-30 m-0 flex min-h-screen flex-col items-center justify-center gap-8 bg-linear-to-br from-gray-100 to-gray-50 p-4 text-center transition-colors duration-300 sm:gap-10 sm:p-6 dark:from-gray-900 dark:to-gray-800 ${""}`}
+      className={`relative z-30 m-0 flex min-h-screen flex-col items-center justify-center gap-8 bg-gray-100 p-4 text-center transition-colors duration-300 sm:gap-10 sm:p-6 dark:bg-gray-800 ${""}`}
     >
       <div className="mb-4">
         <h2

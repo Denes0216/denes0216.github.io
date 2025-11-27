@@ -12,7 +12,7 @@ function App() {
       <ScrollProgress />
       <div
         id="scroll-container"
-        className="h-screen overflow-y-scroll bg-white dark:bg-black"
+        className="h-screen overflow-y-scroll bg-gray-50 dark:bg-gray-900"
       >
         <Hero />
         <About />
