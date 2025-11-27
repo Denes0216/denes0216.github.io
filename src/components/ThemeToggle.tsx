@@ -13,7 +13,7 @@ export default function ThemeToggle() {
       aria-checked={theme === "dark"}
     >
       <FaSun
-        className={`z-10 text-xs ml-1 transition-colors duration-300 ${
+        className={`z-10 ml-1 text-xs transition-colors duration-300 ${
           theme === "light" ? "text-yellow-500" : "text-gray-400"
         }`}
       />
@@ -23,7 +23,7 @@ export default function ThemeToggle() {
         }`}
       ></span>
       <FaMoon
-        className={`z-10 text-xs mr-1 transition-colors duration-300 ${
+        className={`z-10 mr-1 text-xs transition-colors duration-300 ${
           theme === "dark" ? "text-blue-400" : "text-gray-400"
         }`}
       />
