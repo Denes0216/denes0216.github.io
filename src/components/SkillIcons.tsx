@@ -6,6 +6,7 @@ import {
   FaDatabase,
   FaCss3,
   FaJira,
+  FaGithub,
 } from "react-icons/fa";
 import {
   SiBun,
@@ -37,7 +38,7 @@ const skills: Skill[] = [
     color: bgColor,
   },
   { icon: <FaPython />, name: "Python", color: bgColor },
-  { icon: <FaDatabase />, name: "Databases", color: bgColor },
+  { icon: <FaGithub />, name: "GitHub", color: bgColor },
   { icon: <SiJavascript />, name: "JavaScript", color: bgColor },
   { icon: <FaDatabase />, name: "MySQL", color: bgColor },
   { icon: <SiBun />, name: "Bun", color: bgColor },
