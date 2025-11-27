@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FaCode, FaBriefcase, FaGraduationCap } from "react-icons/fa";
-import SkillIcons from "./SkillIcons";
+import Skills from "./Skills";
+import Experience from "./Experience";
+import Education from "./Education";
 
 export default function AboutTabs() {
   const [activeTab, setActiveTab] = useState<string>("Skills");
@@ -13,62 +15,13 @@ export default function AboutTabs() {
 
   const tabs = {
     Skills: (
-      <div className="space-y-6">
-        <p className="leading-relaxed text-gray-700 dark:text-gray-50">
-          I specialize in building modern, responsive web applications with
-          cutting-edge technologies.
-        </p>
-        <SkillIcons />
-      </div>
+      <Skills />
     ),
     Experience: (
-      <div className="space-y-4">
-        <div className="rounded-xl border-l-4 border-gray-600 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-400 dark:bg-gray-700">
-          <h3 className="font-bold text-gray-800 dark:text-gray-200">
-            GreenFox Bootcamp
-          </h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            Green Fox Academy • 2023
-          </p>
-          <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-            10 weeks of intensive full-time training in frontend and backend
-            development.
-            <br />
-            Gained hands-on experience with Java, JavaScript, C#, and more.
-            <br />
-            Completed a team project to build a full-stack web application in 7
-            weeks.
-          </p>
-        </div>
-      </div>
+      <Experience />
     ),
     Education: (
-      <div className="space-y-4">
-        <div className="rounded-xl border-l-4 border-gray-500 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-500 dark:bg-gray-700">
-          <h3 className="font-bold text-gray-800 dark:text-gray-200">
-            GreenFox Junior Full-Stack Developer
-          </h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            Green Fox Academy • 2023
-          </p>
-          <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-            Completed an intensive 17-week full-time coding bootcamp focused on
-            full-stack development.
-          </p>
-        </div>
-        <div className="rounded-xl border-l-4 border-gray-600 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-400 dark:bg-gray-700">
-          <h3 className="font-bold text-gray-800 dark:text-gray-200">
-            Business Information Technology Degree
-          </h3>
-          <p className="text-sm text-gray-800 dark:text-gray-400">
-            Budapest University of Economics and Business • 2024 - present
-          </p>
-          <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-            Working part-time on a Bachelor's degree in Business Information
-            Technology, focusing on the intersection of business and technology.
-          </p>
-        </div>
-      </div>
+      <Education />
     ),
   };
 
