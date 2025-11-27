@@ -25,49 +25,47 @@ export default function AboutTabs() {
       <div className="space-y-4">
         <div className="rounded-xl border-l-4 border-gray-600 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-400 dark:bg-gray-700">
           <h3 className="font-bold text-gray-800 dark:text-gray-200">
-            Senior Developer
+            GreenFox Bootcamp
           </h3>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            Tech Company • 2021 - Present
+            Green Fox Academy • 2023
           </p>
           <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-            Leading development of scalable web applications, mentoring junior
-            developers, and implementing best practices.
-          </p>
-        </div>
-        <div className="rounded-xl border-l-4 border-gray-500 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-500 dark:bg-gray-700">
-          <h3 className="font-bold text-gray-800 dark:text-gray-200">
-            Full Stack Developer
-          </h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            Startup Inc • 2019 - 2021
-          </p>
-          <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-            Developed and maintained multiple client projects using modern
-            JavaScript frameworks and cloud technologies.
+            10 weeks of intensive full-time training in frontend and backend
+            development.
+            <br />
+            Gained hands-on experience with Java, JavaScript, C#, and more.
+            <br />
+            Completed a team project to build a full-stack web application in 7
+            weeks.
           </p>
         </div>
       </div>
     ),
     Education: (
       <div className="space-y-4">
-        <div className="rounded-xl border-l-4 border-gray-600 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-400 dark:bg-gray-700">
-          <h3 className="font-bold text-gray-800 dark:text-gray-200">
-            Computer Science Degree
-          </h3>
-          <p className="text-sm text-gray-600">University Name • 2015 - 2019</p>
-          <p className="mt-2 text-sm text-gray-700">
-            Graduated with honors, specializing in software engineering and web
-            technologies.
-          </p>
-        </div>
         <div className="rounded-xl border-l-4 border-gray-500 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-500 dark:bg-gray-700">
           <h3 className="font-bold text-gray-800 dark:text-gray-200">
-            Online Certifications
+            GreenFox Junior Full-Stack Developer
           </h3>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            AWS Certified Developer • Advanced React Patterns • Full Stack Web
-            Development
+            Green Fox Academy • 2023
+          </p>
+          <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
+            Completed an intensive 17-week full-time coding bootcamp focused on
+            full-stack development.
+          </p>
+        </div>
+        <div className="rounded-xl border-l-4 border-gray-600 bg-gray-50 p-4 text-left transition-all hover:shadow-lg dark:border-gray-400 dark:bg-gray-700">
+          <h3 className="font-bold text-gray-800 dark:text-gray-200">
+            Business Information Technology Degree
+          </h3>
+          <p className="text-sm text-gray-800 dark:text-gray-400">
+            Budapest University of Economics and Business • 2024 - present
+          </p>
+          <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
+            Working part-time on a Bachelor's degree in Business Information
+            Technology, focusing on the intersection of business and technology.
           </p>
         </div>
       </div>
