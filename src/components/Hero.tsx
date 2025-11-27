@@ -22,12 +22,18 @@ export default function Hero() {
       }}
     >
       <ThemeToggle />
-      <h1 className="relative z-10 mb-4 animate-[appearFromLeft_1.5s_ease-out_forwards] px-4 text-3xl font-bold text-white sm:mb-4 sm:text-5xl md:text-6xl lg:text-7xl">
-        Welcome to My Portfolio
+      <h1 className="relative z-10 mb-4 animate-[appearFromLeft_1.5s_ease-out_forwards] px-4 text-3xl font-bold text-gray-50 sm:mb-4 sm:text-5xl md:text-6xl lg:text-7xl">
+        Hi, I'm Denes
       </h1>
+      <div className="mx-auto h-1 w-24 animate-[fadeIn_1.5s_ease-out_forwards] rounded-full bg-linear-to-r from-gray-600 to-gray-400"></div>
+      <h2>
+        <span className="relative z-10 mb-2 animate-[appearFromBottom_1.5s_ease-out_forwards] px-4 text-xl font-medium text-gray-300 sm:mb-4 sm:text-2xl md:text-3xl lg:text-4xl">
+          Junior Frontend Developer
+        </span>
+      </h2>
       <p className="relative z-10 max-w-xl animate-[appearFromBottom_1.5s_ease-out_forwards] px-6 text-base text-white sm:text-lg">
-        Hi! I'm Denes Orban, a passionate developer specializing in building
-        amazing web applications.
+        My passion lies in crafting beautiful and functional and responsive web
+        applications that provide exceptional user experiences.
       </p>
       <div className="relative z-10 mt-4 flex w-full max-w-xs flex-col items-center justify-center gap-4 px-4 sm:mt-6 sm:max-w-none sm:flex-row sm:gap-6 md:gap-8">
         <button

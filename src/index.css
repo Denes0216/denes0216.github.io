@@ -131,6 +131,20 @@ body {
   }
 }
 
+@keyframes skill-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-skill-scroll {
+  animation: skill-scroll 30s linear infinite;
+}
+
 @keyframes slideUpFromBottom {
   0% {
     transform: translateY(100vh);

@@ -1,14 +1,6 @@
 import { useState } from "react";
-import {
-  FaCode,
-  FaBriefcase,
-  FaGraduationCap,
-  FaReact,
-  FaNodeJs,
-  FaPython,
-  FaDatabase,
-} from "react-icons/fa";
-import { SiTypescript, SiTailwindcss } from "react-icons/si";
+import { FaCode, FaBriefcase, FaGraduationCap } from "react-icons/fa";
+import SkillIcons from "./SkillIcons";
 
 export default function AboutTabs() {
   const [activeTab, setActiveTab] = useState<string>("Skills");
@@ -22,52 +14,11 @@ export default function AboutTabs() {
   const tabs = {
     Skills: (
       <div className="space-y-6">
-        <p className="leading-relaxed text-gray-700">
+        <p className="leading-relaxed text-gray-700 dark:text-gray-50">
           I specialize in building modern, responsive web applications with
           cutting-edge technologies.
         </p>
-        <div className="flex flex-wrap justify-center gap-3 sm:justify-start">
-          {[
-            {
-              icon: <FaReact />,
-              name: "React",
-              color: "bg-blue-100 text-blue-700",
-            },
-            {
-              icon: <SiTypescript />,
-              name: "TypeScript",
-              color: "bg-blue-100 text-blue-600",
-            },
-            {
-              icon: <FaNodeJs />,
-              name: "Node.js",
-              color: "bg-green-100 text-green-700",
-            },
-            {
-              icon: <SiTailwindcss />,
-              name: "Tailwind",
-              color: "bg-cyan-100 text-cyan-700",
-            },
-            {
-              icon: <FaPython />,
-              name: "Python",
-              color: "bg-yellow-100 text-yellow-700",
-            },
-            {
-              icon: <FaDatabase />,
-              name: "Databases",
-              color: "bg-purple-100 text-purple-700",
-            },
-          ].map((skill, index) => (
-            <span
-              key={index}
-              className={`flex items-center gap-2 rounded-full px-4 py-2 font-semibold transition-transform hover:scale-110 ${skill.color}`}
-            >
-              <span className="text-lg">{skill.icon}</span>
-              {skill.name}
-            </span>
-          ))}
-        </div>
+        <SkillIcons />
       </div>
     ),
     Experience: (
