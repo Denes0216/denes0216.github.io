@@ -18,7 +18,18 @@ export default function Contact() {
 
   const copyToClipboard = async () => {
     try {
-      await navigator.clipboard.writeText(email);
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(email);
+      } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = email;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+      }
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
@@ -92,19 +103,38 @@ export default function Contact() {
             </a>
             <button
               onClick={copyToClipboard}
-              className="group hidden items-center justify-center gap-2 rounded-xl border-2 border-gray-300 bg-white px-6 py-4 text-gray-700 transition-all duration-300 hover:scale-105 hover:border-gray-700 hover:bg-gray-50 sm:flex dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:hover:border-gray-400 dark:hover:bg-gray-600"
+              className={`group hidden items-center justify-center rounded-xl border-2 px-6 py-4 font-semibold transition-all duration-300 hover:scale-105 sm:flex ${
+                copied
+                  ? "border-green-500 bg-green-50 text-green-600 dark:border-green-400 dark:bg-green-900/30 dark:text-green-400"
+                  : "border-gray-300 bg-white text-gray-700 hover:border-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:hover:border-gray-400 dark:hover:bg-gray-600"
+              }`}
               title="Copy email to clipboard"
             >
-              {copied ? (
-                <>
-                  <FaCheck className="text-xl text-green-600 transition-transform duration-300" />
-                  <span className="font-semibold text-green-600">Copied!</span>
-                </>
-              ) : (
-                <>
-                  <FaCopy className="text-xl transition-transform duration-300 group-hover:rotate-12" />
-                </>
-              )}
+              <span
+                className={`transition-all duration-300 ${
+                  copied
+                    ? "absolute scale-0 opacity-0"
+                    : "scale-100 opacity-100"
+                }`}
+              >
+                <FaCopy className="text-xl transition-transform duration-300 group-hover:rotate-12" />
+              </span>
+              <span
+                className={`transition-all duration-300 ${
+                  copied
+                    ? "scale-100 opacity-100"
+                    : "absolute scale-0 opacity-0"
+                }`}
+              >
+                <FaCheck className="text-xl" />
+              </span>
+              <span
+                className={`overflow-hidden transition-all duration-300 ${
+                  copied ? "max-w-[100px] opacity-100" : "max-w-0 opacity-0"
+                }`}
+              >
+                Copied!
+              </span>
             </button>
           </div>
 
