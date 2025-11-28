@@ -27,7 +27,7 @@ export default function Hero() {
       </h1>
       <div className="mx-auto h-1 w-24 animate-[fadeIn_1.5s_ease-out_forwards] rounded-full bg-linear-to-r from-gray-600 to-gray-400"></div>
       <h2>
-        <span className="relative z-10 mb-2 animate-[appearFromBottom_1.5s_ease-out_forwards] px-4 text-xl font-medium text-gray-300 sm:mb-4 sm:text-2xl md:text-3xl lg:text-4xl">
+        <span className="text-gray-100 relative z-10 mb-2 animate-[appearFromBottom_1.5s_ease-out_forwards] px-4 text-xl font-medium sm:mb-4 sm:text-2xl md:text-3xl lg:text-4xl">
           Junior Frontend Developer
         </span>
       </h2>
