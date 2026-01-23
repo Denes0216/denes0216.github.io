@@ -3,7 +3,6 @@ import {
   FaEnvelope,
   FaGithub,
   FaLinkedin,
-  FaTwitter,
   FaCopy,
   FaCheck,
   FaDownload,
@@ -67,7 +66,9 @@ export default function Contact() {
       <div className="mb-4">
         <h2
           className={`mb-2 bg-linear-to-r from-gray-800 to-gray-600 bg-clip-text text-3xl font-bold text-transparent sm:mb-4 sm:text-4xl lg:text-5xl dark:from-gray-200 dark:to-gray-400 ${
-            isVisible ? "animate-[appearFromBottom_1.5s_ease-out_forwards]" : "opacity-0"
+            isVisible
+              ? "animate-[appearFromBottom_1.5s_ease-out_forwards]"
+              : "opacity-0"
           }`}
         >
           Get In Touch
@@ -139,7 +140,7 @@ export default function Contact() {
           </div>
 
           <a
-            href="/resume.pdf"
+            href="/src/assets/CV_English.pdf"
             download
             className="group flex items-center justify-center gap-3 rounded-xl border-2 border-gray-700 bg-gray-100 px-8 py-4 text-gray-700 transition-all duration-300 hover:scale-105 hover:bg-gray-700 hover:text-white hover:shadow-xl dark:border-gray-400 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
           >
@@ -147,9 +148,9 @@ export default function Contact() {
             <span className="font-semibold">Download Resume</span>
           </a>
 
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-16">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/denes0216"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-2 rounded-xl border-2 border-gray-300 bg-white px-6 py-3 text-gray-700 transition-all duration-300 hover:scale-105 hover:border-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:hover:border-gray-400 dark:hover:bg-gray-600"
@@ -159,23 +160,13 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/denesdorianorban"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-2 rounded-xl border-2 border-gray-300 bg-white px-6 py-3 text-gray-700 transition-all duration-300 hover:scale-105 hover:border-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:hover:border-gray-400 dark:hover:bg-gray-600"
             >
               <FaLinkedin className="text-xl transition-transform duration-300 group-hover:rotate-12" />
               <span className="font-semibold">LinkedIn</span>
-            </a>
-
-            <a
-              href="https://twitter.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center justify-center gap-2 rounded-xl border-2 border-gray-300 bg-white px-6 py-3 text-gray-700 transition-all duration-300 hover:scale-105 hover:border-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:hover:border-gray-400 dark:hover:bg-gray-600"
-            >
-              <FaTwitter className="text-xl transition-transform duration-300 group-hover:rotate-12" />
-              <span className="font-semibold">Twitter</span>
             </a>
           </div>
         </div>

@@ -25,8 +25,6 @@ export default function Projects() {
       description:
         "Are you a book lover looking for your next great read? NextChapter is a great book recommendation app that helps you narrow down your options based on your preferences. \n\nThe app uses openlibrary.org's API.",
       tags: ["TypeScript", "React", "Axios", "React Router", "CSS Modules"],
-      demoLink: "#",
-      githubLink: "#",
       workInProgress: false,
       images: [NextChapter1, NextChapter2, NextChapter3],
     },
@@ -35,8 +33,6 @@ export default function Projects() {
       description:
         "Guess the city based on the weather data provided! Weatherdle is a fun and challenging game that tests your knowledge of world cities and their climates. \n\nThe app uses WeatherAPI.com's API.",
       tags: ["TypeScript", "React", "Redux", "Fuse.js", "CSS Modules"],
-      demoLink: "#",
-      githubLink: "#",
       workInProgress: false,
       images: [Weatherdle1, Weatherdle2, Weatherdle3],
     },
