@@ -7,6 +7,7 @@ import {
   FaCheck,
   FaDownload,
 } from "react-icons/fa";
+import cvPdf from "../assets/CV_English.pdf";
 
 export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
@@ -140,8 +141,8 @@ export default function Contact() {
           </div>
 
           <a
-            href="/src/assets/CV_English.pdf"
-            download
+            href={cvPdf}
+            download="CV_Denes_Orban.pdf"
             className="group flex items-center justify-center gap-3 rounded-xl border-2 border-gray-700 bg-gray-100 px-8 py-4 text-gray-700 transition-all duration-300 hover:scale-105 hover:bg-gray-700 hover:text-white hover:shadow-xl dark:border-gray-400 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
           >
             <FaDownload className="text-xl transition-transform duration-300 group-hover:translate-y-1" />
