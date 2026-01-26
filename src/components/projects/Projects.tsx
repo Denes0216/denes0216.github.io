@@ -39,8 +39,8 @@ export default function Projects() {
     {
       title: "MindFrame AI",
       description:
-        "Generate learning cards from any text input using AI. MindFrame AI leverages OpenAI's GPT-4 to create concise and informative flashcards, making studying more efficient and effective.",
-      tags: ["TypeScript", "Full Stack", "OpenAI GPT-4", "Tailwind", "Bun"],
+        "Generate learning cards from any text input using AI. MindFrame AI leverages OpenAI's GPT Models to create concise and informative flashcards, making studying more efficient and effective.",
+      tags: ["TypeScript", "Full Stack", "OpenAI GPT Models", "Tailwind", "Bun"],
       demoLink: "#",
       githubLink: "#",
       workInProgress: true,
