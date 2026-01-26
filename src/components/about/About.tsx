@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import AboutTabs from "./AboutTabs";
+import profilePicture from "../../assets/ProfilePicture.jpg";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,9 +41,11 @@ export default function About() {
               : "opacity-0"
           }`}
         >
-          <div className="flex h-full w-full items-center justify-center text-6xl text-white/20">
-            <span>👤</span>
-          </div>
+          <img
+            src={profilePicture}
+            alt="Profile"
+            className="h-full w-full object-cover"
+          />
           <div className="absolute -top-4 -right-4 h-24 w-24 rounded-full bg-gray-500/30 blur-2xl"></div>
           <div className="absolute -bottom-4 -left-4 h-32 w-32 rounded-full bg-gray-600/30 blur-2xl"></div>
         </div>
