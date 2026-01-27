@@ -34,6 +34,7 @@ export default function Projects() {
         "Guess the city based on the weather data provided! Weatherdle is a fun and challenging game that tests your knowledge of world cities and their climates. \n\nThe app uses WeatherAPI.com's API.",
       tags: ["TypeScript", "React", "Redux", "Fuse.js", "CSS Modules"],
       workInProgress: false,
+      demoLink: "https://denes0216.github.io/weatherdle/",
       images: [Weatherdle1, Weatherdle2, Weatherdle3],
     },
     {
