@@ -21,14 +21,6 @@ export default function Projects() {
 
   const projects: Project[] = [
     {
-      title: "NextChapter",
-      description:
-        "Are you a book lover looking for your next great read? NextChapter is a great book recommendation app that helps you narrow down your options based on your preferences. \n\nThe app uses openlibrary.org's API.",
-      tags: ["TypeScript", "React", "Axios", "React Router", "CSS Modules"],
-      workInProgress: false,
-      images: [NextChapter1, NextChapter2, NextChapter3],
-    },
-    {
       title: "Weatherdle",
       description:
         "Guess the city based on the weather data provided! Weatherdle is a fun and challenging game that tests your knowledge of world cities and their climates. \n\nThe app uses WeatherAPI.com's API.",
@@ -38,10 +30,24 @@ export default function Projects() {
       images: [Weatherdle1, Weatherdle2, Weatherdle3],
     },
     {
+      title: "NextChapter",
+      description:
+        "Are you a book lover looking for your next great read? NextChapter is a great book recommendation app that helps you narrow down your options based on your preferences. \n\nThe app uses openlibrary.org's API.",
+      tags: ["TypeScript", "React", "Axios", "React Router", "CSS Modules"],
+      workInProgress: false,
+      images: [NextChapter1, NextChapter2, NextChapter3],
+    },
+    {
       title: "MindFrame AI",
       description:
         "Generate learning cards from any text input using AI. MindFrame AI leverages OpenAI's GPT Models to create concise and informative flashcards, making studying more efficient and effective.",
-      tags: ["TypeScript", "Full Stack", "OpenAI GPT Models", "Tailwind", "Bun"],
+      tags: [
+        "TypeScript",
+        "Full Stack",
+        "OpenAI GPT Models",
+        "Tailwind",
+        "Bun",
+      ],
       demoLink: "#",
       githubLink: "#",
       workInProgress: true,
@@ -121,13 +127,17 @@ export default function Projects() {
         </h2>
         <div
           className={`mx-auto h-1 w-24 rounded-full bg-linear-to-r from-gray-600 to-gray-400 ${
-            isVisible ? "animate-[appearFromBottom_1.5s_ease-out_forwards]" : "opacity-0"
+            isVisible
+              ? "animate-[appearFromBottom_1.5s_ease-out_forwards]"
+              : "opacity-0"
           }`}
         ></div>
       </div>
       <div
         className={`relative flex w-full max-w-4xl items-center gap-2 overflow-visible sm:gap-4 ${
-          isVisible ? "animate-[appearFromBottom_1.5s_ease-out_forwards]" : "opacity-0"
+          isVisible
+            ? "animate-[appearFromBottom_1.5s_ease-out_forwards]"
+            : "opacity-0"
         }`}
       >
         <div
