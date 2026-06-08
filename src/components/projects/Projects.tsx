@@ -6,6 +6,10 @@ import NextChapter3 from "../../assets/NextChapter-3.png";
 import Weatherdle1 from "../../assets/Weatherdle-1.png";
 import Weatherdle2 from "../../assets/Weatherdle-2.png";
 import Weatherdle3 from "../../assets/Weatherdle-3.png";
+import NameThatTune1 from "../../assets/name-that-tune-1.png";
+import NameThatTune2 from "../../assets/name-that-tune-2.png";
+import NameThatTune3 from "../../assets/name-that-tune-3.png";
+import NameThatTune4 from "../../assets/name-that-tune-4.png";
 import ProjectNavigation from "./ProjectNavigation";
 
 export default function Projects() {
@@ -20,6 +24,15 @@ export default function Projects() {
   }
 
   const projects: Project[] = [
+    {
+      title: "Name That Tune",
+      description:
+        "Test your music knowledge! Name That Tune plays 30-second song previews and challenges you to guess the year, title, or artist — or pin the release year inside a sliding window. Lowest score wins. Play solo or pass-and-play with friends across themed decks like The Vault, Pop Classics, and Rock Legends. \n\nThe app uses the iTunes catalog for song previews.",
+      tags: ["TypeScript", "React", "React Router", "iTunes API", "CSS Modules"],
+      workInProgress: false,
+      demoLink: "https://denes0216.github.io/Tracker/#/",
+      images: [NameThatTune1, NameThatTune2, NameThatTune3, NameThatTune4],
+    },
     {
       title: "Weatherdle",
       description:
